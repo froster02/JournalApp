@@ -10,13 +10,6 @@ A modern journaling application that helps you capture, organize, and reflect on
 - **Privacy Focused:** Your data is stored securely—only accessible to you.
 - **Responsive Design:** Use the app on desktop or mobile from anywhere.
 
-## Getting Started
-
-### Prerequisites
-
-- [Install Node.js](https://nodejs.org/) (if running locally)
-- [Git](https://git-scm.com/)
-
 ### Installation
 
 1. Clone the repository:
