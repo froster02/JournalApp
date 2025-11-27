@@ -10,22 +10,6 @@ A modern journaling application that helps you capture, organize, and reflect on
 - **Privacy Focused:** Your data is stored securely—only accessible to you.
 - **Responsive Design:** Use the app on desktop or mobile from anywhere.
 
-### Installation
-
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/froster02/JournalApp.git
-    cd JournalApp
-    ```
-2. Install dependencies:
-    ```bash
-    npm install
-    ```
-3. Start the app:
-    ```bash
-    npm start
-    ```
-
 ## Usage
 
 - Create a new journal entry by clicking "Add Entry".
