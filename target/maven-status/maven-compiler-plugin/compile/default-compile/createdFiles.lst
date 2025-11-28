@@ -1,6 +1,10 @@
 com/example/JournalApp/Entity/JournalEntry.class
 com/example/JournalApp/service/JournalEntryService.class
+com/example/JournalApp/contoller/UserController.class
+com/example/JournalApp/service/UserService.class
 com/example/JournalApp/repository/JournalEntryRepository.class
+com/example/JournalApp/Entity/User.class
 com/example/JournalApp/contoller/HealthCheck.class
+com/example/JournalApp/repository/UserRepository.class
 com/example/JournalApp/JournalApplication.class
 com/example/JournalApp/contoller/JournalEntryControllerV2.class

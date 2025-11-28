@@ -1,6 +1,10 @@
 /Users/arushnaudiyal/Documents/Developer/JournalApp/src/main/java/com/example/JournalApp/Entity/JournalEntry.java
+/Users/arushnaudiyal/Documents/Developer/JournalApp/src/main/java/com/example/JournalApp/Entity/User.java
 /Users/arushnaudiyal/Documents/Developer/JournalApp/src/main/java/com/example/JournalApp/JournalApplication.java
 /Users/arushnaudiyal/Documents/Developer/JournalApp/src/main/java/com/example/JournalApp/contoller/HealthCheck.java
 /Users/arushnaudiyal/Documents/Developer/JournalApp/src/main/java/com/example/JournalApp/contoller/JournalEntryControllerV2.java
+/Users/arushnaudiyal/Documents/Developer/JournalApp/src/main/java/com/example/JournalApp/contoller/UserController.java
 /Users/arushnaudiyal/Documents/Developer/JournalApp/src/main/java/com/example/JournalApp/repository/JournalEntryRepository.java
+/Users/arushnaudiyal/Documents/Developer/JournalApp/src/main/java/com/example/JournalApp/repository/UserRepository.java
 /Users/arushnaudiyal/Documents/Developer/JournalApp/src/main/java/com/example/JournalApp/service/JournalEntryService.java
+/Users/arushnaudiyal/Documents/Developer/JournalApp/src/main/java/com/example/JournalApp/service/UserService.java
