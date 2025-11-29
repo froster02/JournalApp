@@ -24,7 +24,7 @@ public class User {
     @DBRef
     private List<JournalEntry> journalEntries = new ArrayList<>();
 
-
+    // Alias accessors used by controller (keep Lombok-generated methods intact)
     public String getUserName() {
         return this.username;
     }
@@ -33,7 +33,17 @@ public class User {
         this.username = userName;
     }
 
+    public String getUsername() { return this.username; }
+    public void setUsername(String username) { this.username = username; }
+
     public void setUserPassword(String userPassword) {
         this.password = userPassword;
+    }
+
+    public void setPassword(String password) { this.password = password; }
+
+    // Explicit getter for password to ensure compilation without Lombok annotation processing
+    public String getPassword() {
+        return this.password;
     }
 }
