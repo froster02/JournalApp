@@ -6,6 +6,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDateTime;
 
+import com.example.JournalApp.Entity.User;
+
 @Document(collection = "journal_entries")
 public class JournalEntry {
 
@@ -14,6 +16,15 @@ public class JournalEntry {
     private String title;
     private String content;
     private LocalDateTime date;
+    private User user;
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 
     // Getters and Setters
     public ObjectId getId() { return id; }
