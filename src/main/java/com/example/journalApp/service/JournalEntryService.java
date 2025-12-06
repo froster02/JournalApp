@@ -8,6 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -24,12 +25,18 @@ public class JournalEntryService {
     @Autowired
     private UserService userService;
 
+    @Transactional
     public void saveEntry(JournalEntry journalEntry, String userName) {
-        User user = userService.findByUserName(userName);   //Finds the user account by its username.
-        journalEntry.setDate(LocalDateTime.now());
-        JournalEntry saved = journalEntryRepository.save(journalEntry);   //Saves the new journal entry into the database.
-        user.getJournalEntries().add(saved);    //Adds the newly saved entry to the user's personal list of entries.
-        userService.saveEntry(user);    //Updates the user's information to link the new entry.
+        try {
+            User user = userService.findByUserName(userName);   //Finds the user account by its username.
+            journalEntry.setDate(LocalDateTime.now());
+            JournalEntry saved = journalEntryRepository.save(journalEntry);   //Saves the new journal entry into the database.
+            user.getJournalEntries().add(saved);    //Adds the newly saved entry to the user's personal list of entries.
+            userService.saveEntry(user);    //Updates the user's information to link the new entry.
+        } catch (Exception e) {
+            System.out.println(e);
+            throw new RuntimeException("An error occured while saving the entry.", e);
+        }
     }
 
     public void saveEntry(JournalEntry journalEntry) {
