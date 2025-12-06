@@ -27,4 +27,5 @@ public class User {
 
     @DBRef //this annotation is creating reference in users of journal entries
     private List<JournalEntry> journalEntries = new ArrayList<>();
+    private List<String> roles;
 }
